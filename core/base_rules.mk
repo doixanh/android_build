@@ -476,11 +476,11 @@ ifndef LOCAL_UNINSTALLABLE_MODULE
   # installation;  hence, LOCAL_ACP_UNAVAILABLE.
 ifneq ($(LOCAL_ACP_UNAVAILABLE),true)
 $(LOCAL_INSTALLED_MODULE): $(LOCAL_BUILT_MODULE) | $(ACP)
-	@echo "Install: $@"
+	@echo -e "\e[01;31mInstall: $@\e[00m"
 	$(copy-file-to-target)
 else
 $(LOCAL_INSTALLED_MODULE): $(LOCAL_BUILT_MODULE)
-	@echo "Install: $@"
+	@echo -e "\e[01;31mInstall: $@\e[00m"
 	$(copy-file-to-target-with-cp)
 endif
 
