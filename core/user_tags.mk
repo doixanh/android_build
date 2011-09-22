@@ -90,6 +90,7 @@ GRANDFATHERED_USER_MODULES += \
 	dhcpcd.conf \
 	dhcpcd-run-hooks \
 	dictTest \
+	dnsmasq \
 	draw9patch \
 	droiddoc \
 	dumpeventlog \
